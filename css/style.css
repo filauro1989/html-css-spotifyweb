@@ -20,7 +20,7 @@ body {
     font-size: 0.8em;
     font-weight: bold;
 }
-li {
+ul {
     list-style-type: none;
 }
 li > a {
@@ -29,6 +29,9 @@ li > a {
 a {
     text-decoration: none;
     color: var(--grey);
+}
+h3 {
+    color: var(--white);
 }
 
 /* utilities */
@@ -51,11 +54,13 @@ a {
 .container {
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 /* main with 2 col */
 main {
     height: calc(100vh - 80px);
+    overflow: auto;
 }
 .left-col {
     height: 100%;
@@ -90,6 +95,31 @@ main {
     filter: invert(42%) sepia(8%) saturate(269%) hue-rotate(187deg) brightness(97%) contrast(92%);
 }
 
+/* playlist list */
+.playlist-container {
+    flex-direction: column;
+}
+.playlist-container .add-playlist {
+    padding: 1em 0;
+}
+.playlist-container .add-playlist a {
+    align-items: center;
+}
+.playlist-container .add-playlist a .create-playlist {
+    padding-left: 0.5em;
+    font-size: 1.2em;
+}
+.playlist-container .add-playlist .square {
+    height: 3em;
+    width: 3em;
+    background-color: var(--lightgrey);
+}
+.playlist-container .add-playlist .square span {
+    margin: auto;
+    font-size: 2.5em;
+    color: var(--black);
+}
+
 
 
 
@@ -99,4 +129,8 @@ main {
     width: 100%;
     height: 80px;
     background-color: var(--darkgrey);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
