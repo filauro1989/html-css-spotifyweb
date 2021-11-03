@@ -119,6 +119,9 @@ main {
     font-size: 2.5em;
     color: var(--black);
 }
+.playlist-container ul li {
+    padding: 0.8em 0;
+}
 
 
 
