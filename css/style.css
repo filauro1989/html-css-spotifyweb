@@ -80,6 +80,7 @@ main {
 }
 .left-col .logo-container .logo-container-big {
     height: 3em;
+    filter: invert(0);
 }
 .left-col .nav-list {
     margin: 1.6em 0;
@@ -91,13 +92,16 @@ main {
 .left-col .nav-list li a {
     align-items: center;
 }
-.left-col .nav-list li a > img {
+.left-col img {
     filter: invert(42%) sepia(8%) saturate(269%) hue-rotate(187deg) brightness(97%) contrast(92%);
 }
 
 /* playlist list */
 .playlist-container {
     flex-direction: column;
+}
+.playlist-container ul {
+    /* overflow: auto; */
 }
 .playlist-container .add-playlist {
     padding: 1em 0;
@@ -121,6 +125,34 @@ main {
 }
 .playlist-container ul li {
     padding: 0.8em 0;
+}
+
+/* lower column */
+.lower-column {
+    margin-bottom: 0.5em;
+}
+.lower-column .call-to-action a {
+    align-items: center;
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid var(--grey);
+}
+.lower-column .call-to-action a img{
+    height: 1.2em;
+}
+.lower-column .user-selection a {
+    align-items: center;
+    color: var(--white);
+    padding-top: 1.2em;
+}
+.lower-column span {
+    padding: 0 1em;
+}
+.lower-column .user-selection img {
+    height: 2em;
+    width: 2em;
+    background-color: var(--lightgrey);
+    border-radius: 50%;
+    filter: invert(0);
 }
 
 
