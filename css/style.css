@@ -67,9 +67,8 @@ main {
 .left-col {
     height: 100%;
     width: var(--left-col-large);
+    min-height: 500px;
     background-color: black;
-    flex-direction: column;
-    justify-content: space-between;
 }
 .right-col {
     height: 100%;
@@ -109,10 +108,14 @@ main {
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
+/* Upper column */
+.upper-column {
+    height: calc(100% - 100px);
+}
 /* playlist list */
 .playlist-container {
     flex-direction: column;
+    height: 400px;
 }
 .playlist-container .ul-container {
     overflow: auto;
@@ -144,6 +147,7 @@ main {
 /* lower column */
 .lower-column {
     margin-bottom: 0.5em;
+    height: 100px;
 }
 .lower-column .call-to-action a {
     align-items: center;
