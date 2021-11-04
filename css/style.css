@@ -182,8 +182,10 @@ main {
 }
 .right-col-header .upgrade-button {
     border: 1px solid var(--white);
-    padding: 1em;
+    padding: 0.8em 2.6em;
     border-radius: 20px;
+    margin-right: 2em;
+    color: var(--white);
 }
 
 
