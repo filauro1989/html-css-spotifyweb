@@ -75,7 +75,7 @@ main {
     height: 100%;
     width: calc(100% - var(--left-col-large));
     overflow: auto;
-    background-color: blue;
+    background-color: var(--darkblue);
     padding-top: 85px;
 }
 /* left column */
@@ -113,6 +113,9 @@ main {
 /* playlist list */
 .playlist-container {
     flex-direction: column;
+}
+.playlist-container .ul-container {
+    overflow: auto;
 }
 .playlist-container .add-playlist {
     padding: 1em 0;
