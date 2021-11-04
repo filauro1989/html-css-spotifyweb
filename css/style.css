@@ -196,6 +196,15 @@ main {
     height: 100px;
     background-color: var(--darkgrey);
 }
+.nav-left-col,
+.nav-right-col {
+    width: 15%;
+    height: 100%;
+}
+.nav-center-col {
+    width: 70%;
+    height: 100%;
+}
 
 /* MEDIA QUERY */
 @media screen and (max-width: 600px) {
