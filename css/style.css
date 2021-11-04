@@ -62,7 +62,7 @@ h3 {
 /* main with 2 col */
 main {
     height: calc(100vh - 80px);
-    overflow: auto;
+    overflow: hidden;
 }
 .left-col {
     height: 100%;
