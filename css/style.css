@@ -66,7 +66,7 @@ main {
 }
 .left-col {
     height: 100%;
-    width: 200px;
+    width: var(--left-col-large);
     background-color: black;
     flex-direction: column;
     justify-content: space-between;
@@ -76,6 +76,7 @@ main {
     width: calc(100% - var(--left-col-large));
     overflow: auto;
     background-color: blue;
+    padding-top: 85px;
 }
 /* left column */
 .left-col > div {
@@ -178,4 +179,17 @@ main {
     bottom: 0;
     left: 0;
     z-index: 1;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    .left-col {
+        width: var(--left-col-xs);
+    }
+    .right-col {
+        width: calc(100% - var(--left-col-xs));
+    }
+    .right-col-header {
+        width: calc(100% - var(--left-col-xs));
+    }
 }
