@@ -193,9 +193,9 @@ main {
 }
 .nav-left-col,
 .nav-right-col {
+    min-width: 160px;
     width: 20%;
     height: 100%;
-    max-width: 200px;
 }
 .nav-center-col {
     width: 60%;
@@ -203,8 +203,9 @@ main {
 }
 .col-container {
     align-items: center;
+    max-width: 180px;
     width: 100%;
-    margin-left: 1em;
+    margin-left: 0.6em;
 }
 /* left column */
 /* album container */
