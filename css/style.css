@@ -10,6 +10,8 @@
     --lightgrey: #aeb0b2;
     --darkblue: #141922;
     --white: #ffffff;
+    --left-col-xs: 50px;
+    --left-col-large: 200px;
 }
 html {
     font-size: 100%;
@@ -71,7 +73,8 @@ main {
 }
 .right-col {
     height: 100%;
-    width: calc(100% - 200px);
+    width: calc(100% - var(--left-col-large));
+    overflow: auto;
     background-color: blue;
 }
 /* left column */
@@ -96,12 +99,19 @@ main {
     filter: invert(42%) sepia(8%) saturate(269%) hue-rotate(187deg) brightness(97%) contrast(92%);
 }
 
+/* right column */
+.right-col-header {
+    height: 80px;
+    width: calc(100% - var(--left-col-large));
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* playlist list */
 .playlist-container {
     flex-direction: column;
-}
-.playlist-container ul {
-    /* overflow: auto; */
 }
 .playlist-container .add-playlist {
     padding: 1em 0;
