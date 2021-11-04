@@ -67,7 +67,7 @@ main {
 .left-col {
     height: 100%;
     width: var(--left-col-large);
-    min-height: 500px;
+    min-height: 400px;
     background-color: black;
 }
 .right-col {
@@ -102,11 +102,11 @@ main {
 /* Upper column */
 .upper-column {
     height: calc(100% - 100px);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 /* playlist list */
 .playlist-container {
-    height: 90%;
+    height: 100%;
 }
 .playlist-container .add-playlist {
 }
