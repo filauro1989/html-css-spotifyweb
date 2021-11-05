@@ -312,14 +312,14 @@ main {
 .nav-center-col .nav-center-upper-container ul li {
     display: inline;
     vertical-align: middle;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 0 0.5em;
 }
 .nav-center-col .nav-center-upper-container ul li a {
     color: var(--white);
 }
 .nav-center-col .nav-center-upper-container ul .play-button {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 /* lower container */
 .nav-center-col .nav-center-lower-container {
@@ -416,4 +416,12 @@ main {
         border: none;
         justify-content: center;
     }
+    .nav-left-col .col-container .album-container img {
+        height: 2em;
+    }
+    /* .nav-right-col .col-container > * {
+        padding: 0 2%;
+    }  */
+    .nav-right-col .col-container .progress-bar {
+    } 
 }
