@@ -233,6 +233,20 @@ main {
     max-width: 180px;
     width: 100%;
 }
+.progress-bar {
+    height: 3px;
+    background-color: var(--grey);
+    position: relative;
+    border-radius: 3px;
+}
+.progress-bar-white {
+    height: 3px;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
 /* LEFT column */
 /* album container */
 .nav-left-col .col-container {
@@ -277,24 +291,16 @@ main {
 }
 .col-container .progress-bar {
     width: 8em;
-    height: 3px;
-    background-color: var(--grey);
-    position: relative;
-    border-radius: 3px;
 }
 .col-container .progress-bar .progress-bar-white {
     width: 1.5em;
-    height: 3px;
-    background-color: var(--white);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 3px;
 }
 /* CENTRAL column */
-.nav-center-col .nav-center-upper-container {
+.nav-center-col .nav-center-upper-container,
+.nav-center-col .nav-center-lower-container {
     height: 50%;
 }
+/* upper container */
 .nav-center-col .nav-center-upper-container ul {
     text-align: center;
     margin: auto;
@@ -310,6 +316,45 @@ main {
 }
 .nav-center-col .nav-center-upper-container ul .play-button {
     font-size: 2.5em;
+}
+/* lower container */
+.nav-center-col .nav-center-lower-container {
+    width: 60%;
+    margin: 0 auto;
+}
+.nav-center-col .nav-center-lower-container .lower-container-wrapper {
+    width: 100%;
+    margin: auto;
+}
+.nav-center-col .nav-center-lower-container .lower-container-wrapper > * {
+    display: inline-block;
+}
+.lower-container-wrapper .progress-bar {
+    width: 80%;
+    vertical-align: middle;
+    padding: 0.1em 0;
+}
+.lower-container-wrapper .progress-bar .progress-bar-white{
+    width: 20%;
+}
+.lower-container-wrapper .time {
+    width: 9%;
+}
+.nav-center-col .nav-center-lower-container .lower-container-wrapper .time:last-child {
+    text-align: right;
+}
+.progress-bar .white-dot {
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: 18%;
+    display: none;
+}
+.lower-container-wrapper .progress-bar:hover .white-dot{
+    display: block;
 }
 
 
