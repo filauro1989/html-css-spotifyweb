@@ -321,24 +321,23 @@ main {
 .nav-center-col .nav-center-lower-container {
     width: 60%;
     margin: 0 auto;
+    font-size: 0.8em;
 }
 .nav-center-col .nav-center-lower-container .lower-container-wrapper {
     width: 100%;
     margin: auto;
-}
-.nav-center-col .nav-center-lower-container .lower-container-wrapper > * {
-    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
 }
 .lower-container-wrapper .progress-bar {
-    width: 80%;
-    vertical-align: middle;
+    width: 60%;
     padding: 0.1em 0;
 }
 .lower-container-wrapper .progress-bar .progress-bar-white{
     width: 20%;
 }
 .lower-container-wrapper .time {
-    width: 9%;
+    width: 35px;
 }
 .nav-center-col .nav-center-lower-container .lower-container-wrapper .time:last-child {
     text-align: right;
