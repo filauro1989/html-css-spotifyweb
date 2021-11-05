@@ -32,6 +32,10 @@ a {
     text-decoration: none;
     color: var(--grey);
 }
+a:hover {
+    filter: invert(0);
+    color: var(--white);
+}
 h3 {
     color: var(--white);
 }
@@ -95,10 +99,8 @@ main {
     height: 3em;
     filter: invert(0);
 }
-.left-col a:hover > *,
-.left-col a:hover {
+.left-col a:hover > * {
     filter: invert(0);
-    color: var(--white);
 }
 /* nav list */
 .left-col .nav-list {
@@ -156,8 +158,9 @@ main {
     padding: 0.8em 0;
 }
 /* lower column */
-.lower-column {
+.left-col .lower-column {
     height: 100px;
+    padding-left: 1.6em;
 }
 .lower-column .call-to-action a {
     align-items: center;
@@ -229,10 +232,12 @@ main {
     align-items: center;
     max-width: 180px;
     width: 100%;
+}
+/* LEFT column */
+/* album container */
+.nav-left-col .col-container {
     margin-left: 0.6em;
 }
-/* left column */
-/* album container */
 .nav-left-col .col-container .album-container {
     width: 80%;
 }
@@ -259,6 +264,32 @@ main {
 }
 .nav-left-col .col-container .preference-container a {
     padding: 0 0.4em;
+}
+/* RIGHT column */
+.nav-right-col {
+    justify-content: flex-end;
+}
+.nav-right-col .col-container {
+    margin-right: 0.6em;
+}
+.nav-right-col .col-container > * {
+    padding: 0 4%;
+}
+.col-container .progress-bar {
+    width: 8em;
+    height: 3px;
+    background-color: var(--grey);
+    position: relative;
+    border-radius: 3px;
+}
+.col-container .progress-bar .progress-bar-white {
+    width: 1.5em;
+    height: 3px;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
 }
 
 
