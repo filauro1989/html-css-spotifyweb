@@ -377,6 +377,12 @@ main {
     .right-col-header {
         width: calc(100% - var(--left-col-xs));
     }
+    .left-col > div {
+        padding: 0;
+    }
+    .left-col .upper-column {
+        padding-top: 0.5em;
+    }
     .left-col .logo-container {
         padding-left: 0.4em;
         padding-right: 0.4em;
@@ -397,5 +403,17 @@ main {
         padding-left: 0;
         justify-content: center;
         width: 100%;
+    }
+    .left-col .lower-column {
+        padding-left: 0;
+        padding-top: 1.5em;
+    }
+    .left-col .lower-column span {
+        display: none;
+    }
+    .left-col .lower-column .call-to-action a,
+    .left-col .lower-column .user-selection a {
+        border: none;
+        justify-content: center;
     }
 }
