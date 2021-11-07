@@ -243,7 +243,9 @@ main {
     padding-top: 0.3em;
     border-bottom: 3px solid greenyellow;
 }
-.right-col-menu .menu-ul-container ul li:hover a {
+.right-col-menu .menu-ul-container ul li:hover a,
+.right-col-menu .menu-ul-container ul li:focus a,
+.right-col-menu .menu-ul-container ul li:active a {
     color: white;
 }
 /* main content wrapper*/
@@ -405,6 +407,11 @@ main {
 .nav-center-col .nav-center-upper-container ul .play-button {
     font-size: 2em;
 }
+.nav-center-col .nav-center-upper-container ul .play-button:hover,
+.nav-center-col .nav-center-upper-container ul .play-button:focus,
+.nav-center-col .nav-center-upper-container ul .play-button:active {
+    font-size: 2.2em;
+}
 /* lower container */
 .nav-center-col .nav-center-lower-container {
     width: 100%;
@@ -433,15 +440,18 @@ main {
 .progress-bar .white-dot {
     height: 1em;
     width: 1em;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 50%;
     position: absolute;
     top: -4px;
-    left: 18%;
+    left: 20%;
     display: none;
 }
-.lower-container-wrapper .progress-bar:hover .white-dot{
+.lower-container-wrapper .progress-bar:hover .white-dot {
     display: block;
+}
+.lower-container-wrapper .progress-bar:hover .progress-bar-white {
+    background-color: greenyellow;
 }
 
 
