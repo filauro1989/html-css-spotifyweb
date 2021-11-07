@@ -261,11 +261,18 @@ main {
 .main-content-wrapper h1 {
     color: var(--white);
 }
+.main-content-wrapper h3 {
+    padding-top: 0.5em;
+}
+.main-content-wrapper p {
+    padding: 0.5em 0;
+}
 .choice-box {
     float: left;
     width: calc((100% - 6em) / 6);
     margin: 0.5em;
     text-align: center;
+    padding: 2em 0;
 }
 .choice-box .box-img {
     position: relative;
@@ -297,7 +304,10 @@ main {
 .choice-box .box-img:hover .img-hover-play {
     display: block;
 }
-
+.popular-artists .choice-box .box-img {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 
 
@@ -382,7 +392,15 @@ main {
     width: 8em;
 }
 .col-container .progress-bar .progress-bar-white {
-    width: 1.5em;
+    width: 20%;
+}
+.col-container .progress-bar:hover .white-dot {
+    display: block;
+    cursor: pointer;
+}
+.col-container .progress-bar:hover .progress-bar-white {
+    background-color: greenyellow;
+    cursor: pointer;
 }
 /* CENTRAL column */
 .nav-center-col .nav-center-upper-container,
@@ -448,9 +466,11 @@ main {
 }
 .lower-container-wrapper .progress-bar:hover .white-dot {
     display: block;
+    cursor: pointer;
 }
 .lower-container-wrapper .progress-bar:hover .progress-bar-white {
     background-color: greenyellow;
+    cursor: pointer;
 }
 
 
