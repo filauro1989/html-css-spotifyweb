@@ -88,7 +88,7 @@ main {
     width: calc(100% - var(--left-col-large));
     overflow: auto;
     background-color: var(--darkblue);
-    padding-top: 130px;
+    padding-top: 110px;
 }
 /* MAIN left column */
 .left-col > div {
