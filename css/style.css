@@ -126,6 +126,7 @@ main {
     align-items: center;
     padding-left: 1.6em;
     width: 50%;
+    border-left: 3px solid var(--black);
 }
 .left-col .nav-list li a img {
     height: 3em;
@@ -425,10 +426,10 @@ main {
 .nav-center-col .nav-center-upper-container ul .play-button {
     font-size: 2em;
 }
-.nav-center-col .nav-center-upper-container ul .play-button:hover,
-.nav-center-col .nav-center-upper-container ul .play-button:focus,
-.nav-center-col .nav-center-upper-container ul .play-button:active {
-    font-size: 2.2em;
+.nav-center-col .nav-center-upper-container ul .play-button:hover a i,
+.nav-center-col .nav-center-upper-container ul .play-button:focus a i,
+.nav-center-col .nav-center-upper-container ul .play-button:active a i {
+    transform: scale(1.2);
 }
 /* lower container */
 .nav-center-col .nav-center-lower-container {
