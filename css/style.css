@@ -198,7 +198,7 @@ main {
     filter: invert(0);
 }
 
-/* right column header */
+/* right column header fixed*/
 .right-col-header {
     height: 100px;
     width: calc(100% - var(--left-col-large));
@@ -206,6 +206,7 @@ main {
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
 }
 .right-col-header {
     justify-content: flex-end;
